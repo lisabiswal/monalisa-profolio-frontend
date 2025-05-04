@@ -1,0 +1,638 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: linear-gradient(90deg, #0f0c29 0%, #302b63 50%, #24243e 100%); */
+  background-color: #0f0c29;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pj button:hover{
+  background-color:#7870bc;
+  transition: all 0.5s;
+}
+header{
+  position: fixed;
+  left: 5%;
+  top: 3%;
+  z-index: 11111;
+
+}
+nav{
+  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(3px);
+  width: 80rem;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: larger;
+  
+}
+nav .logo{
+  letter-spacing: 3px;
+}
+
+header ul li {
+  list-style: none;
+  font-size: 16px;
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+}
+ul li a i{
+  color: rgb(255, 201, 255);
+  
+}
+header ul{
+  display: flex;
+  gap: 2rem;
+}
+.hero{
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  margin-top: 13rem;
+}
+.hero h1,.project-sec h1,.skills .tech,.all-certi .certi-heading{
+  letter-spacing: 10px;
+  font-weight: 500;
+  background: linear-gradient(45deg, #b93a9f, #3333ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+.hero .img-right{
+  width: 15rem;
+  height: 10rem;
+}
+
+.left p{
+  width: 28rem;
+  color: rgba(182, 180, 180, 0.949);
+  font-weight: 300;
+  letter-spacing: 1.2px;
+}
+.img-right {
+  position: relative;
+  display: inline-block;
+ 
+}
+.img-right::before {
+  content: "";
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 340px;
+  height: 240px;
+  transform: translate(-55%, -50%);
+  background: radial-gradient(circle, #453f7fc0, transparent 80%);
+  border-radius: 50%;
+  filter: blur(20px);
+  z-index: 0;
+}
+
+.img-right img {
+  position: relative;
+  z-index: 1;
+  border-radius: 100%; 
+}
+.resume a{
+  text-decoration: none;
+  color: rgba(240, 248, 255, 0.575); 
+}
+.resume{
+  margin-top: 10px;
+  border: 2px  dashed rgb(55, 65, 113);
+  padding: 10px 30px;
+  display: inline-block;
+  background-color: #1b1743;
+  border-bottom: 4px solid rgb(31, 49, 94);
+  
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.resume:hover{
+  cursor: pointer;
+  background-color: #1b1743a1;
+  box-shadow: rgba(154, 151, 151, 0.256) 0px 3px 8px;
+}
+.project-sec h1, .skills .tech,.all-certi .certi-heading{
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.project-sec{
+  margin-top: 4rem;
+}
+.project-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  
+}
+.all-projects{
+  width: 75rem;
+  display: flex;
+  gap: 15px;
+
+  aspect-ratio: 2;
+  
+  
+}
+.project-sec h1{
+  margin-bottom: 4rem;
+}
+.about p,.about h2{
+  color: rgba(148, 145, 145, 0.949);
+
+}
+.about p{
+  font-size: 16px;
+}
+.about h2{
+  font-weight: 400;
+  color: rgb(192, 188, 188);
+}
+.about{
+  padding: 10px 20px;
+}
+.all-projects img{
+  width: 100%;
+}
+.pj{
+  width: 60rem;
+  height: auto;
+  background-color: #2b23736f;
+}
+.all-projects .pj{
+  border: 1px solid #372f7f;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.pj button{
+  padding: 7px 30px;
+  background-color: #5c4db1;
+  border: none;
+  border-radius: 10px;
+  display: grid;
+  width: 100%;
+
+}
+.pj button a{
+  text-decoration: none;
+  color: #ffff;
+}
+.about p{
+  font-size: 14px;
+}
+.skills{
+  margin-top: 5rem;
+}
+.all-skills i{
+  width: 2rem;
+  height: 2rem;
+}
+.all-skills  {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.tailwind{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.python ,.sql,.nodejs,.css,.html,.react{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.all-skills .bar{
+  height: 2rem;
+  background-color: #736caf;
+  width: 40rem;
+  border-radius: 50px;
+  border: 1px solid rgb(140, 109, 171);
+  
+  
+}
+.bar .percent{
+  
+  background-color: #282353;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50px;
+}
+.bar .percent1{
+  width: 90%;
+  
+}
+
+.bar .percent2{
+  width: 95%;
+}
+.bar .percent3{
+  width: 85%;
+}
+.bar .percent4{
+  width: 70%;
+}
+.bar .percent5{
+  width: 75%;
+}
+.bar .percent6{
+  width: 90%;
+}
+.bar .percent7{
+  width: 65%;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items:last baseline;
+}
+.all-certi{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+.all-certi .all{
+  width: 80rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.all-certi .certi{
+  /* border: 2px solid red; */
+  width: 20rem;
+  height: 15rem;
+  position: relative;
+  
+}
+.all-certi .all img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 4px solid  rgb(96, 57, 159) ;
+  
+}
+.all-certi .certi .vertical-sidebar{
+  position: absolute;
+  width: 20%;
+  height: 103%;
+  background-color: rgba(96, 57, 159, 0.761);
+  left: 80%;
+  top: 0;
+  /* border-radius:0 0 25px; */
+}
+.all-certi h1{
+  margin-bottom: 4rem;
+}
+.vertical-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  height: 100vh;           /* or set a specific height */
+  
+}
+
+.vertical-sidebar button {
+  writing-mode: vertical-lr;
+  font-weight: 200;
+  letter-spacing: 2px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  margin: 10px 0; /* spacing between buttons if multiple */
+}
+.vertical-sidebar button a{
+  color: rgb(242, 232, 255);
+  text-decoration: none;
+}
+
+.mes{
+ width: 100%;
+ height: 20rem;
+ background-image: linear-gradient(80deg,#221d47,#0f0c29,#221d50);
+ margin: 0 auto;
+ margin-bottom: 8rem;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ margin-top: 10rem;
+}
+
+.form-img{
+  display: flex;
+  gap: 4rem;
+  /* color: #0f0c29; */
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+#name,#mail,#mes{
+  padding: 10px 20px;
+  margin: 0;
+  width: 20rem;
+  border-radius: 20px;
+  background-color: #193a4888;
+  border: 1px solid white;
+  color: white;
+  font-size: larger;
+  
+}
+#mes{
+  height: 4rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+#submit{
+  width: 99%;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: #4449d0;
+  border: none;
+  color: white;
+  
+}
+.mes .conatact{
+  font-weight: 300;
+  color: rgb(126, 126, 251);
+}
+footer{
+  
+  height: 20rem;
+  background-color: rgba(76, 76, 76, 0.34);
+  margin-top: 25rem;
+  padding: 20px;
+  color: rgb(190, 188, 188);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.in-foot{
+ display: flex;
+ justify-content: space-around;
+ 
+  
+}
+ .quote{
+  width: 40%;
+  
+  /* background-color: #221d50; */
+ }
+.inq{
+  display: block;
+  /* width: 25rem; */
+  font-size: 30px;
+  text-align: center;
+  font-weight: 200;
+
+  /* color: black; */
+}
+.inq b{
+  color: rgba(235, 235, 20, 0.766);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.inq::first-letter{
+  font-size: 70px;
+  color: #b3abf4;
+}
+.social-mid a{
+  text-decoration: none;
+  color: rgb(190, 188, 188);
+  font-size: 30px;
+  margin-right: 20px;
+}
+.social h3{
+  letter-spacing: 10px;
+  color:#0f0c29;
+  font-size: 25px;
+}
+.form #submit:hover{
+  background-color: #7265eb98;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Header and navigation */
+  body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  header nav {
+    width: 90%;
+    padding: 10px;
+    font-size: smaller;
+  }
+  
+  nav .logo {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+  
+  header ul {
+    gap: 0.5rem;
+    font-size: 12px;
+  }
+  
+  /* Hero section */
+  .hero {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin-top: 8rem;
+    padding: 0 20px;
+  }
+  
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .left p {
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .img-right {
+    margin: 0 auto;
+  }
+  
+  .img-right::before {
+    width: 240px;
+    height: 180px;
+  }
+  
+  /* Projects section */
+  .all-projects {
+    width: 90%;
+    flex-direction: column;
+  }
+  
+  .pj {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .about p {
+    font-size: 12px;
+  }
+  
+  /* Skills section */
+  .all-skills .bar {
+    width: 80%;
+  }
+  
+  .python, .sql, .nodejs, .css, .html, .react {
+    gap: 30px;
+  }
+  
+  .all-skills i {
+    font-size: 2rem;
+  }
+  
+  /* Certificates section */
+  .all {
+    width: 90%;
+  }
+  
+  .all-certi .all {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .vertical-sidebar {
+    display: none;
+  }
+  
+  /* Contact section */
+  .form-img {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .left-side-img {
+    text-align: center;
+  }
+  
+  .left-side-img img {
+    width: 80%;
+  }
+  
+  #name, #mail, #mes {
+    width: 80%;
+  }
+  
+  /* Footer */
+  .in-foot {
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .quote {
+    width: 90%;
+  }
+  
+  .inq {
+    font-size: 18px;
+  }
+  
+  .social h3 {
+    font-size: 18px;
+    letter-spacing: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjustments for very small screens */
+  header nav {
+    flex-direction: column;
+    padding: 5px;
+  }
+  
+  .logo {
+    margin-bottom: 5px;
+  }
+  
+  header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .hero h1, .project-sec h1, .skills .tech, .all-certi .certi-heading {
+    font-size: 24px;
+    letter-spacing: 5px;
+  }
+  
+  .img-right img {
+    width: 150px;
+  }
+  
+  .img-right::before {
+    width: 180px;
+    height: 140px;
+  }
+  
+  .resume {
+    padding: 8px 20px;
+  }
+  
+  .all-skills .bar {
+    width: 90%;
+  }
+  
+  .mes {
+    margin-bottom: 4rem;
+  }
+  
+  .inq {
+    font-size: 16px;
+  }
+  
+  .inq::first-letter {
+    font-size: 40px;
+  }
+}
+
+
